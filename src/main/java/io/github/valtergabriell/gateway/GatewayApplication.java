@@ -21,7 +21,7 @@ public class GatewayApplication {
                 .route(r -> r.path("/account/**").uri("lb://msaccount"))
                 .route(r -> r.path("/credit/**").uri("lb://mscredit"))
                 .route(r -> r.path("/card/**").uri("lb://mscard"))
-                .route(r -> r.path("/shop/**").uri("lb://msshopping"))
+                .route(r -> r.path("/products/**").uri("lb://msshopping"))
                 .build();
     }
 
