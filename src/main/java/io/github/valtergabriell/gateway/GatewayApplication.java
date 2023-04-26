@@ -24,6 +24,7 @@ public class GatewayApplication {
                 .route(r -> r.path("/product/**").uri("lb://msshopping"))
                 .route(r -> r.path("/lead/**").uri("lb://mslead"))
                 .route(r -> r.path("/colaborator/**").uri("lb://mscolaborator"))
+                .route(r -> r.path("/job/**").uri("lb://msjobs"))
                 .build();
     }
 
