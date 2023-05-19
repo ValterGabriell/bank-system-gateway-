@@ -27,5 +27,4 @@ public class GatewayApplication {
                 .route(r -> r.path("/job/**").uri("lb://msjobs"))
                 .build();
     }
-
 }
